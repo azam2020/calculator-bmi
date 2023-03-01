@@ -20,7 +20,7 @@ app.post("/",function(req,res){
     // res.send("<div style='background-color: green; text-align: center; font-size: 3rem; color: aqua;'><h1>The sum is <%=ans %></h1></div>");
 })
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log("Server is logged in");
 });
 
